@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp
+iostream
+-
+BancoReg.h
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+stdlib.h
+-
+
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp
+cstdio
+-
+iostream
+-
+fstream
+-
+RAM.h
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/main.cpp
+iostream
+-
+cmake-build-debug/Model/BancoReg.h
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+cmake-build-debug/Model/RAM.h
+C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+
