@@ -13,7 +13,7 @@ private:
 
 
 public:
-    RAM(char* Nome);
+    RAM(char* nome);
     void printCodigo();
 };
 
