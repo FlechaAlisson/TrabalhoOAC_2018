@@ -12,6 +12,14 @@ BancoReg::BancoReg() {
     }
 }
 
+int BancoReg::getPC() const {
+    return PC;
+}
+
+void BancoReg::setPC(int PC) {
+    BancoReg::PC = PC;
+}
+
 int BancoReg::GetRegat(int n)
 {
     return this->reg[n];

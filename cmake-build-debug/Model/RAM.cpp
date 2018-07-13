@@ -29,12 +29,12 @@ RAM::RAM(char* nome)
         this->codigo[n]= a;
         n++;
     }
+    this->qtCodigo = n;
 }
 
 void RAM::printCodigo() {
 
-    //TODO por algum motivo da tando erro nessa parte na hora do print
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < this->qtCodigo; ++i) {
         cout << "[" << i << "] " << this->codigo[i] << endl;
     }
 }

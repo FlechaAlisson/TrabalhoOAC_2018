@@ -176,6 +176,33 @@ Model/RAM.cpp.s:
 	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/RAM.cpp.s
 .PHONY : Model/RAM.cpp.s
 
+Model/UnidadeControle.obj: Model/UnidadeControle.cpp.obj
+
+.PHONY : Model/UnidadeControle.obj
+
+# target to build an object file
+Model/UnidadeControle.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj
+.PHONY : Model/UnidadeControle.cpp.obj
+
+Model/UnidadeControle.i: Model/UnidadeControle.cpp.i
+
+.PHONY : Model/UnidadeControle.i
+
+# target to preprocess a source file
+Model/UnidadeControle.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.i
+.PHONY : Model/UnidadeControle.cpp.i
+
+Model/UnidadeControle.s: Model/UnidadeControle.cpp.s
+
+.PHONY : Model/UnidadeControle.s
+
+# target to generate assembly for a file
+Model/UnidadeControle.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.s
+.PHONY : Model/UnidadeControle.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -218,6 +245,9 @@ help:
 	@echo ... Model/RAM.obj
 	@echo ... Model/RAM.i
 	@echo ... Model/RAM.s
+	@echo ... Model/UnidadeControle.obj
+	@echo ... Model/UnidadeControle.i
+	@echo ... Model/UnidadeControle.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

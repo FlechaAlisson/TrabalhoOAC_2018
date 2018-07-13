@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp" "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj"
   "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp" "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj"
+  "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp" "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj"
   "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/main.cpp" "C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/CMakeFiles/TrabOAC.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

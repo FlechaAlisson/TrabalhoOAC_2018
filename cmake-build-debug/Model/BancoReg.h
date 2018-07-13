@@ -10,10 +10,15 @@
 class BancoReg {
 private:
     int *reg;
+    int PC;
 public:
     BancoReg();
     int GetRegat(int n);
     void PrinRegs();
+
+    int getPC() const;
+
+    void setPC(int PC);
 };
 
 
