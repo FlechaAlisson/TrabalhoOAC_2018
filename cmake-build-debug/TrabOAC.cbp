@@ -92,10 +92,28 @@
 		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h">
 			<Option target="TrabOAC"/>
 		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.cpp">
+			<Option target="TrabOAC"/>
+		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h">
+			<Option target="TrabOAC"/>
+		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.cpp">
+			<Option target="TrabOAC"/>
+		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h">
+			<Option target="TrabOAC"/>
+		</Unit>
 		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
 		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h">
+			<Option target="TrabOAC"/>
+		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Util/Util.cpp">
+			<Option target="TrabOAC"/>
+		</Unit>
+		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h">
 			<Option target="TrabOAC"/>
 		</Unit>
 		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/main.cpp">

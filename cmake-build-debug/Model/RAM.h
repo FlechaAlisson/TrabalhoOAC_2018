@@ -15,6 +15,7 @@ private:
     int qtDados;
 
 public:
+    int getcodigo(int n);
     RAM(char* nome);
     void printCodigo();
 };

@@ -38,3 +38,7 @@ void RAM::printCodigo() {
         cout << "[" << i << "] " << this->codigo[i] << endl;
     }
 }
+
+int RAM::getcodigo(int n)  {
+    return codigo[n];
+}

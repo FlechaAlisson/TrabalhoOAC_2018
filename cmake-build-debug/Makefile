@@ -176,6 +176,60 @@ Model/RAM.cpp.s:
 	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/RAM.cpp.s
 .PHONY : Model/RAM.cpp.s
 
+Model/Somador.obj: Model/Somador.cpp.obj
+
+.PHONY : Model/Somador.obj
+
+# target to build an object file
+Model/Somador.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj
+.PHONY : Model/Somador.cpp.obj
+
+Model/Somador.i: Model/Somador.cpp.i
+
+.PHONY : Model/Somador.i
+
+# target to preprocess a source file
+Model/Somador.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/Somador.cpp.i
+.PHONY : Model/Somador.cpp.i
+
+Model/Somador.s: Model/Somador.cpp.s
+
+.PHONY : Model/Somador.s
+
+# target to generate assembly for a file
+Model/Somador.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/Somador.cpp.s
+.PHONY : Model/Somador.cpp.s
+
+Model/ULA.obj: Model/ULA.cpp.obj
+
+.PHONY : Model/ULA.obj
+
+# target to build an object file
+Model/ULA.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj
+.PHONY : Model/ULA.cpp.obj
+
+Model/ULA.i: Model/ULA.cpp.i
+
+.PHONY : Model/ULA.i
+
+# target to preprocess a source file
+Model/ULA.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/ULA.cpp.i
+.PHONY : Model/ULA.cpp.i
+
+Model/ULA.s: Model/ULA.cpp.s
+
+.PHONY : Model/ULA.s
+
+# target to generate assembly for a file
+Model/ULA.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/ULA.cpp.s
+.PHONY : Model/ULA.cpp.s
+
 Model/UnidadeControle.obj: Model/UnidadeControle.cpp.obj
 
 .PHONY : Model/UnidadeControle.obj
@@ -202,6 +256,33 @@ Model/UnidadeControle.s: Model/UnidadeControle.cpp.s
 Model/UnidadeControle.cpp.s:
 	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.s
 .PHONY : Model/UnidadeControle.cpp.s
+
+Util/Util.obj: Util/Util.cpp.obj
+
+.PHONY : Util/Util.obj
+
+# target to build an object file
+Util/Util.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj
+.PHONY : Util/Util.cpp.obj
+
+Util/Util.i: Util/Util.cpp.i
+
+.PHONY : Util/Util.i
+
+# target to preprocess a source file
+Util/Util.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Util/Util.cpp.i
+.PHONY : Util/Util.cpp.i
+
+Util/Util.s: Util/Util.cpp.s
+
+.PHONY : Util/Util.s
+
+# target to generate assembly for a file
+Util/Util.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabOAC.dir\build.make CMakeFiles/TrabOAC.dir/Util/Util.cpp.s
+.PHONY : Util/Util.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -245,9 +326,18 @@ help:
 	@echo ... Model/RAM.obj
 	@echo ... Model/RAM.i
 	@echo ... Model/RAM.s
+	@echo ... Model/Somador.obj
+	@echo ... Model/Somador.i
+	@echo ... Model/Somador.s
+	@echo ... Model/ULA.obj
+	@echo ... Model/ULA.i
+	@echo ... Model/ULA.s
 	@echo ... Model/UnidadeControle.obj
 	@echo ... Model/UnidadeControle.i
 	@echo ... Model/UnidadeControle.s
+	@echo ... Util/Util.obj
+	@echo ... Util/Util.i
+	@echo ... Util/Util.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

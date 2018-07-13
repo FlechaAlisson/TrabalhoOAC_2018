@@ -39,13 +39,10 @@ public:
     void setAluSrc(int AluSrc);
 
     int getRegWrite() const;
-
     void setRegWrite(int RegWrite);
-    static UnidadeControle* getInstance();
-    void Destroy();
+    void DecodificaOP(int inst);
+    void Rtype(int inst);
 private:
-    UnidadeControle();
-    static UnidadeControle* instance;
     int RegDst = 0;
     int Branch = 0;
     int MemRead = 0;
@@ -54,6 +51,7 @@ private:
     int MemWrite = 0;
     int AluSrc = 0;
     int RegWrite = 0;
+
 
 
 };

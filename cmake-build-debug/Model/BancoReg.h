@@ -10,14 +10,14 @@
 class BancoReg {
 private:
     int *reg;
-    int PC;
-public:
+    int PC = 0;
     BancoReg();
+    static BancoReg* instace;
+public:
+    static BancoReg* getinstance();
     int GetRegat(int n);
     void PrinRegs();
-
     int getPC() const;
-
     void setPC(int PC);
 };
 

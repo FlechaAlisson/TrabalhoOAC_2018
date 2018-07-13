@@ -2,9 +2,12 @@
 // Created by Alisson on 12/07/2018.
 //
 
+#include <stdio.h>
+#include <iostream>
 #include "UnidadeControle.h"
+#include "../Util/Util.h"
+#include "BancoReg.h"
 
-UnidadeControle* UnidadeControle::instance = nullptr;
 
 int UnidadeControle::getRegDst() const {
     return RegDst;
@@ -70,13 +73,47 @@ int UnidadeControle::getRegWrite() const {
 void UnidadeControle::setRegWrite(int RegWrite) {
     UnidadeControle::RegWrite = RegWrite;
 }
-UnidadeControle* UnidadeControle::getInstance()
-{
-    if(instance == 0)
-        instance = new UnidadeControle();
-    return instance;
+
+void UnidadeControle::DecodificaOP(int instrution) {
+  Util *util = new Util();
+  int op = util->getOPcode(instrution);
+    std::cout<< op << std::endl;
+
+  switch (op)
+    {
+        case 0:
+            Rtype(instrution);
+            break;
+        case -1946157056: // 8C00000 -> 100011
+            //TODO go to I-type
+            break;
+        case 134217728: // 08000000 ->  000010
+            //TODO go to J-type
+            break;
+    }
+
+    delete util;
+
 }
 
-UnidadeControle::UnidadeControle() {
+void UnidadeControle::Rtype(int inst) {
+    Util *util = new Util();
+
+    int func = util->getFunc(inst);
+
+    switch (func)
+    {
+        case 32:
+            BancoReg* bd = BancoReg::getinstance();
+
+           /* int rs = util.getRS(inst);
+            int rd = util.getRT(inst);
+            int rd = util.getRD(inst);*/
+            std::cout<< (void*) bd << std::endl;
+           break;
+
+    }
+
 
 }
+
