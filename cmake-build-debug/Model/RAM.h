@@ -4,8 +4,6 @@
 
 #ifndef TRABOAC_RAM_H
 #define TRABOAC_RAM_H
-using namespace std;
-
 
 class RAM {
 private:
@@ -15,8 +13,10 @@ private:
     int qtDados;
 
 public:
+
     int getcodigo(int n);
     RAM(char* nome);
+    int getdado(int n);
     void printCodigo();
 };
 

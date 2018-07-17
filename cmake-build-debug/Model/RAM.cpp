@@ -21,11 +21,15 @@ RAM::RAM(char* nome)
     {
         //transformar a string em um inteiro
         int a = 0;
-        for (int i = 0; i <= 31; ++i) {
+        for (int i = 0; i < 31; ++i) {
+
             a <<= 1;
             int mask = line.at(i) - '0';
             a = mask | a;
+            //cout << "[" << 31 - i << "]" << line.at(i) << endl;
         }
+
+
         this->codigo[n]= a;
         n++;
     }
@@ -41,4 +45,8 @@ void RAM::printCodigo() {
 
 int RAM::getcodigo(int n)  {
     return codigo[n];
+}
+
+int RAM::getdado(int n) {
+    return dados[n];
 }

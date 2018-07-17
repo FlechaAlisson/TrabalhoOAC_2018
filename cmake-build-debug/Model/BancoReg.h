@@ -14,6 +14,7 @@ private:
     BancoReg();
     static BancoReg* instace;
 public:
+    void setRegat(int n, int valor);
     static BancoReg* getinstance();
     int GetRegat(int n);
     void PrinRegs();

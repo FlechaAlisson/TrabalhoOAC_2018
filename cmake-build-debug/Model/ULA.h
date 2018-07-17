@@ -7,9 +7,17 @@
 
 
 class ULA {
+private:
+    static ULA* instance;
+    ULA();
+    int op1;
+    int op2;
+    int dst;
 public:
-    int soma(int a, int b);
-    int subtrai(int a, int b);
+    static ULA* getInstance();
+    void setOP(int a , int b, int c);
+    int soma();
+    int subtrai(int a, int b, int c);
 
 
 };

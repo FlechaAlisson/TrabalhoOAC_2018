@@ -6,11 +6,12 @@
 
 #include <iostream>
 #include "BancoReg.h"
+using namespace std;
 
 BancoReg* BancoReg::instace = 0;
 BancoReg::BancoReg() {
-    this->reg= (int *) malloc(sizeof(int) * 31);
-    for (int i = 0; i < 32; ++i) {
+    this->reg= (int *) malloc(sizeof(int) * 32);
+    for (int i = 0; i <= 32; ++i) {
         this->reg[i] = 0;
     }
 }
@@ -25,7 +26,7 @@ void BancoReg::setPC(int PC) {
 
 int BancoReg::GetRegat(int n)
 {
-    return this->reg[n];
+    return this->reg[n-1];
 }
 
 void BancoReg::PrinRegs() {
@@ -40,4 +41,9 @@ BancoReg *BancoReg::getinstance() {
     if(instace == nullptr)
         instace = new BancoReg();
     return instace;
+}
+
+void BancoReg::setRegat(int n, int valor) {
+    reg[n-1] = valor;
+
 }

@@ -7,7 +7,9 @@
 #include "UnidadeControle.h"
 #include "../Util/Util.h"
 #include "BancoReg.h"
+#include "ULA.h"
 
+using namespace std;
 
 int UnidadeControle::getRegDst() const {
     return RegDst;
@@ -77,7 +79,7 @@ void UnidadeControle::setRegWrite(int RegWrite) {
 void UnidadeControle::DecodificaOP(int instrution) {
   Util *util = new Util();
   int op = util->getOPcode(instrution);
-    std::cout<< op << std::endl;
+
 
   switch (op)
     {
@@ -101,17 +103,20 @@ void UnidadeControle::Rtype(int inst) {
 
     int func = util->getFunc(inst);
 
+
     switch (func)
     {
-        case 32:
+        case 0:
+            ULA* ula = ULA::getInstance();
             BancoReg* bd = BancoReg::getinstance();
+            int reg1 = util->getReg1TypeR(inst);
+            int reg2 = util->getReg2TypeR(inst);
+            int dst = util->getRegDSTTypeR(inst);
+            bd->setRegat(reg1, 3);
+            bd->setRegat(reg2, 2);
+            ula->setOP(reg1,reg2,dst);
 
-           /* int rs = util.getRS(inst);
-            int rd = util.getRT(inst);
-            int rd = util.getRD(inst);*/
-            std::cout<< (void*) bd << std::endl;
-           break;
-
+            break;
     }
 
 
