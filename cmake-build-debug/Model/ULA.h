@@ -13,13 +13,18 @@ private:
     int op1;
     int op2;
     int dst;
+    int aluop;
+    int alucontrol;
 public:
     static ULA* getInstance();
-    void setOP(int a , int b, int c);
+    void setOP(int a , int b, int c, int aluop);
     int soma();
-    int subtrai(int a, int b, int c);
+    int subtrai();
+    void executa();
 
+    void logicAnd();
 
+    void logicOr();
 };
 
 

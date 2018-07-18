@@ -22,7 +22,7 @@ int Util::getReg1TypeR(int inst) {
     int aux = inst & mask;
     if (!aux)
         return 0; // se for 0, sai do loop retornando 0
-    aux >>= 20;
+    aux >>= 21;
     return aux;
 }
 
@@ -31,7 +31,7 @@ int Util::getReg2TypeR(int inst) {
     int aux = inst & mask;
     if (!aux)
         return 0;
-    aux>>=15;
+    aux>>=16;
     return aux;
 
 }
@@ -41,7 +41,7 @@ int Util::getRegDSTTypeR(int inst) {
     int aux = inst & mask;
     if (!aux)
         return 0;
-    aux>>=10;
+    aux>>=11;
 
     return aux;
 

@@ -103,20 +103,32 @@ void UnidadeControle::Rtype(int inst) {
 
     int func = util->getFunc(inst);
 
-
+    ULA* ula = ULA::getInstance();
+    BancoReg* bd = BancoReg::getinstance();
+    int reg1 = util->getReg1TypeR(inst);
+    int reg2 = util->getReg2TypeR(inst);
+    int dst = util->getRegDSTTypeR(inst);
     switch (func)
     {
-        case 0:
-            ULA* ula = ULA::getInstance();
-            BancoReg* bd = BancoReg::getinstance();
-            int reg1 = util->getReg1TypeR(inst);
-            int reg2 = util->getReg2TypeR(inst);
-            int dst = util->getRegDSTTypeR(inst);
+        case 32:
             bd->setRegat(reg1, 3);
             bd->setRegat(reg2, 2);
-            ula->setOP(reg1,reg2,dst);
-
+            ula->setOP(reg1,reg2,dst,010);
             break;
+        case 34:
+            bd->setRegat(reg1, 3);
+            bd->setRegat(reg2, 2);
+            ula->setOP(reg1,reg2,dst,110);
+            break;
+        case 36:
+            bd->setRegat(reg1, 3);
+            bd->setRegat(reg2, 2);
+            ula->setOP(reg1,reg2,dst,000);
+            break;
+        case 37:
+            bd->setRegat(reg1, 3);
+            bd->setRegat(reg2, 2);
+            ula->setOP(reg1,reg2,dst,001);
     }
 
 

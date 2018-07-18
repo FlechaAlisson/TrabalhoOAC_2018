@@ -21,12 +21,12 @@ RAM::RAM(char* nome)
     {
         //transformar a string em um inteiro
         int a = 0;
-        for (int i = 0; i < 31; ++i) {
+        for (int i = 0; i < 32; ++i) {
 
             a <<= 1;
             int mask = line.at(i) - '0';
             a = mask | a;
-            //cout << "[" << 31 - i << "]" << line.at(i) << endl;
+        //    cout << "[" << 32 - i << "]" << line.at(i) << endl;
         }
 
 

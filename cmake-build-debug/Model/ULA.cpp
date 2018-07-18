@@ -7,14 +7,17 @@
 #include "BancoReg.h"
 
 ULA* ULA::instance = nullptr;
-int ULA::subtrai(int a, int b, int c) {
-    return a-b;
-}
+
 
 int ULA::soma() {
     BancoReg* bg  = BancoReg::getinstance();
     bg->setRegat(dst,bg->GetRegat(op1) + bg->GetRegat(op2));
 }
+int ULA::subtrai(){
+    BancoReg* bg  = BancoReg::getinstance();
+    bg->setRegat(dst,bg->GetRegat(op1) - bg->GetRegat(op2));
+}
+
 
 
 ULA *ULA::getInstance() {
@@ -23,13 +26,46 @@ ULA *ULA::getInstance() {
     return instance;
 }
 
-void ULA::setOP(int a, int b, int c) {
+void ULA::setOP(int a, int b, int c, int aluop) {
     op1 = a;
     op2 = b;
     dst = c;
+    this->aluop = aluop;
 
 }
 
 ULA::ULA() {
+
+}
+
+void ULA::executa() {
+
+    switch (aluop) {
+        case 010:
+            soma();
+            break;
+        case 110:
+            subtrai();
+            break;
+        case 000:
+            logicAnd();
+            break;
+        case 001:
+            logicOr();
+            break;
+
+    }
+
+
+}
+
+void ULA::logicAnd() {
+    BancoReg* bg  = BancoReg::getinstance();
+    bg->setRegat(dst,bg->GetRegat(op1) & bg->GetRegat(op2));
+}
+
+void ULA::logicOr() {
+    BancoReg* bg  = BancoReg::getinstance();
+    bg->setRegat(dst,bg->GetRegat(op1) | bg->GetRegat(op2));
 
 }

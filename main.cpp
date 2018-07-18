@@ -13,7 +13,7 @@ int main(){
     ULA *ula = ULA::getInstance();
     UnidadeControle *unidadeControle = new UnidadeControle();
     unidadeControle->DecodificaOP(ram->getcodigo(0));
-    ula->soma();
+    ula->executa();
     bd->PrinRegs();
 
 
