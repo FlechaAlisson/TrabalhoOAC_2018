@@ -80,40 +80,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.h">
 			<Option target="TrabOAC"/>
 		</Unit>
 		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/main.cpp">

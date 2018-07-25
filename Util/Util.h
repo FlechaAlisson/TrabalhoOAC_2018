@@ -17,6 +17,7 @@ public:
     int getRegRTTypeI(int inst);
     int getConstTypeI(int inst);
 
+    int getConstTypeJ(int i);
 };
 
 

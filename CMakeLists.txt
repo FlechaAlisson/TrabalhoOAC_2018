@@ -3,4 +3,5 @@ project(TrabOAC)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TrabOAC main.cpp cmake-build-debug/Model/BancoReg.cpp cmake-build-debug/Model/BancoReg.h cmake-build-debug/Model/RAM.cpp cmake-build-debug/Model/RAM.h cmake-build-debug/Model/UnidadeControle.cpp cmake-build-debug/Model/UnidadeControle.h cmake-build-debug/Util/Util.cpp cmake-build-debug/Util/Util.h cmake-build-debug/Model/ULA.cpp cmake-build-debug/Model/ULA.h cmake-build-debug/Model/Somador.cpp cmake-build-debug/Model/Somador.h)
+
+add_executable(TrabOAC main.cpp Model/RAM.cpp Model/RAM.h Model/UnidadeControle.cpp Model/UnidadeControle.h Util/Util.cpp Util/Util.h Model/ULA.cpp Model/ULA.h Model/Somador.cpp Model/Somador.h Model/BancoReg.cpp Model/BancoReg.h)

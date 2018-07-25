@@ -5,10 +5,10 @@
 #include <stdio.h>
 #include <iostream>
 #include "UnidadeControle.h"
-#include "../Util/Util.h"
 #include "BancoReg.h"
 #include "ULA.h"
 #include "RAM.h"
+#include "../Util/Util.h"
 
 using namespace std;
 
@@ -94,17 +94,21 @@ void UnidadeControle::DecodificaOP(int instrution) {
             break;
         case 35:
             ItypeLW(instrution);
+            break;
         case 4:
             //goto beq
+            break;
         case 5:
             //goto bne
+            break;
         case 2:
-            //goto jump
+            JtypeJump(instrution);
+            break;
         case 134217728: // 08000000 ->  000010
             //TODO go to J-type
             break;
         default:
-            cout<<"OPcode não valido"<<endl;
+            cout<<"ERRO: Opcode não valido"<<endl;
             break;
     }
 
@@ -125,27 +129,23 @@ void UnidadeControle::Rtype(int inst) {
     switch (func)
     {
         case 32:
-            bd->setRegat(reg1, 3);
-            bd->setRegat(reg2, 2);
             ula->setOP(reg1,reg2,dst,010);
             break;
         case 34:
-            bd->setRegat(reg1, 3);
-            bd->setRegat(reg2, 2);
             ula->setOP(reg1,reg2,dst,110);
             break;
         case 36:
-            bd->setRegat(reg1, 3);
-            bd->setRegat(reg2, 2);
             ula->setOP(reg1,reg2,dst,000);
             break;
         case 37:
-            bd->setRegat(reg1, 3);
-            bd->setRegat(reg2, 2);
             ula->setOP(reg1,reg2,dst,001);
+            break;
+        case 8:
+            bd->setPC(reg1);
+            break;
 
         default:
-            cout<<"Function nao valida"<<endl;
+            cout<<"ERRO: Function nao valida"<<endl;
             break;
     }
 
@@ -177,6 +177,7 @@ void UnidadeControle::ItypeSW(int inst) {
     int offset = ula->offset(regts,constante);
     bg->setRegat(regrs,ram->getdado(offset));
 
+    delete(util);
 
 }
 
@@ -190,8 +191,16 @@ void UnidadeControle::ItypeLW(int inst) {
     int regrs = util->getRegRSTypeI(inst);
     int regts = util->getRegRTTypeI(inst);
     int constante = util->getConstTypeI(inst);
-    int offset = ula->offset(regts,constante);
-    ram->setDadoAt(offset,bg->GetRegat(regrs));
+    int address = ula->offset(regts,constante);
+    ram->setDadoAt(address,bg->GetRegat(regrs));
+    delete(util);
+}
 
+void UnidadeControle::JtypeJump(int instrution) {
+    BancoReg* bg  = BancoReg::getinstance();
+    Util *util = new Util();
+    int address = util->getConstTypeJ(instrution);
+
+    bg->setPC(address);
 }
 

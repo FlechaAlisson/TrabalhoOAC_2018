@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.cpp
 iostream
 -
 iomanip
 -
 BancoReg.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
-stdlib.h
--
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.cpp
 cstdio
 -
 iostream
@@ -26,67 +24,65 @@ iostream
 fstream
 -
 RAM.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.cpp
 iostream
 -
 Somador.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.cpp
 ULA.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.h
 RAM.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
 BancoReg.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.cpp
 stdio.h
 -
 iostream
 -
 UnidadeControle.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h
-../Util/Util.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.h
 BancoReg.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h
 ULA.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.h
 RAM.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
+../Util/Util.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.cpp
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.cpp
 iostream
 -
 Util.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.h
 
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Util/Util.h
 
 C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/main.cpp
 iostream
 -
-cmake-build-debug/Model/BancoReg.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h
-cmake-build-debug/Model/RAM.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h
-cmake-build-debug/Model/UnidadeControle.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h
-cmake-build-debug/Util/Util.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h
-cmake-build-debug/Model/ULA.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h
-cmake-build-debug/Model/Somador.h
-C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h
+Model/BancoReg.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/BancoReg.h
+Model/RAM.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
+Model/ULA.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/ULA.h
+Model/UnidadeControle.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/UnidadeControle.h
+Model/Somador.h
+C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/Somador.h
 

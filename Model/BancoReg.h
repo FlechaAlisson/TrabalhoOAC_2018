@@ -5,8 +5,6 @@
 #ifndef TRABOAC_BANCOREG_H
 #define TRABOAC_BANCOREG_H
 
-#include <stdlib.h>
-
 class BancoReg {
 private:
     int *reg;
@@ -17,7 +15,7 @@ public:
     void setRegat(int n, int valor);
     static BancoReg* getinstance();
     int GetRegat(int n);
-    void PrinRegs();
+    void PrinRegs(int i);
     int getPC() const;
     void setPC(int PC);
 };

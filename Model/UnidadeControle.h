@@ -59,6 +59,8 @@ private:
     void ItypeSW(int instrution);
 
     void ItypeLW(int instrution);
+
+    void JtypeJump(int instrution);
 };
 
 

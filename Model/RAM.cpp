@@ -33,8 +33,8 @@ RAM::RAM(char* nome)
         n++;
 
     }
-    this->qtCodigo = n;
-    for (int j = n+1; j < 100; ++j) {
+    this->qtCodigo = n-1;
+    for (int j = n; j < 100; ++j) {
         this->codigo[j]= 0;
     }
 }

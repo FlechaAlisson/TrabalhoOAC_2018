@@ -1,26 +1,28 @@
 #include <iostream>
-#include "cmake-build-debug/Model/BancoReg.h"
-#include "cmake-build-debug/Model/RAM.h"
-#include "cmake-build-debug/Model/UnidadeControle.h"
-#include "cmake-build-debug/Util/Util.h"
-#include "cmake-build-debug/Model/ULA.h"
-#include "cmake-build-debug/Model/Somador.h"
-
+#include "Model/BancoReg.h"
+#include "Model/RAM.h"
+#include "Model/ULA.h"
+#include "Model/UnidadeControle.h"
+#include "Model/Somador.h"
 using namespace std;
 
 int main(){
     BancoReg* bd = BancoReg::getinstance();
-    RAM *ram = new RAM("dados.txt");
+    char string[85] = "C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/dados.txt";
+    RAM *ram = new RAM(string);
     ram->setInstance(ram);
     ULA *ula = ULA::getInstance();
     UnidadeControle *unidadeControle = new UnidadeControle();
     Somador *somador = new Somador();
-    while (bd->getPC() < ram->getQtCodigo()) {
+    while (bd->getPC() <= ram->getQtCodigo()) {
 
-        unidadeControle->DecodificaOP(ram->getcodigo(bd->getPC()));
+        int pc = bd->getPC();
+        int instrucao = ram->getcodigo(bd->getPC());
+        bd->setPC(somador->incrementa(bd->getPC()));
+        unidadeControle->DecodificaOP(instrucao);
         ula->executa();
-        bd->PrinRegs();
-        bd->setPC(somador->incrementa(bd->getPC()));//todo mudar para ser o primeira coisa
+        cout << "Executando: "<<(void*) instrucao << endl;
+        bd->PrinRegs(pc);
     }
 
     return 0;
