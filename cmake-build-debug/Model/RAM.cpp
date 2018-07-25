@@ -5,8 +5,7 @@
 #include "RAM.h"
 
 using namespace std;
-#define TAM 33
-
+RAM* RAM::instance = 0;
 RAM::RAM(char* nome)
 {
     string line;
@@ -32,13 +31,25 @@ RAM::RAM(char* nome)
 
         this->codigo[n]= a;
         n++;
+
     }
     this->qtCodigo = n;
+    for (int j = n+1; j < 100; ++j) {
+        this->codigo[j]= 0;
+    }
+}
+
+int RAM::getQtCodigo() const {
+    return qtCodigo;
+}
+
+void RAM::setQtCodigo(int qtCodigo) {
+    RAM::qtCodigo = qtCodigo;
 }
 
 void RAM::printCodigo() {
 
-    for (int i = 0; i < this->qtCodigo; ++i) {
+    for (int i = 0; i < 100; ++i) {
         cout << "[" << i << "] " << this->codigo[i] << endl;
     }
 }
@@ -48,5 +59,18 @@ int RAM::getcodigo(int n)  {
 }
 
 int RAM::getdado(int n) {
-    return dados[n];
+    return dados[n-1];
+}
+
+RAM *RAM::getInstance() {
+    return instance;
+}
+
+void RAM::setInstance(RAM *ins) {
+    instance = ins;
+
+}
+
+void RAM::setDadoAt(int n, int valor) {
+    dados[n] = valor;
 }

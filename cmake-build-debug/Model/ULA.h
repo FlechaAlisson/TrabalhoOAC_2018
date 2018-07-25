@@ -18,9 +18,11 @@ private:
 public:
     static ULA* getInstance();
     void setOP(int a , int b, int c, int aluop);
+    int offset(int a , int b);
     int soma();
     int subtrai();
     void executa();
+    int somaofset();
 
     void logicAnd();
 

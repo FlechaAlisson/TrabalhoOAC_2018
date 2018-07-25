@@ -42,6 +42,7 @@ public:
     void setRegWrite(int RegWrite);
     void DecodificaOP(int inst);
     void Rtype(int inst);
+
 private:
     int RegDst = 0;
     int Branch = 0;
@@ -53,7 +54,11 @@ private:
     int RegWrite = 0;
 
 
+    void ItypeLUI(int instrution);
 
+    void ItypeSW(int instrution);
+
+    void ItypeLW(int instrution);
 };
 
 

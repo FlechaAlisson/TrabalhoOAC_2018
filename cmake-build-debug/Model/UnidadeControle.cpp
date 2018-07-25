@@ -8,6 +8,7 @@
 #include "../Util/Util.h"
 #include "BancoReg.h"
 #include "ULA.h"
+#include "RAM.h"
 
 using namespace std;
 
@@ -80,17 +81,30 @@ void UnidadeControle::DecodificaOP(int instrution) {
   Util *util = new Util();
   int op = util->getOPcode(instrution);
 
-
   switch (op)
     {
         case 0:
             Rtype(instrution);
             break;
-        case -1946157056: // 8C00000 -> 100011
-            //TODO go to I-type
+        case 15: // 8C00000 -> 100011
+            ItypeLUI(instrution);
             break;
+        case 43:
+            ItypeSW(instrution);
+            break;
+        case 35:
+            ItypeLW(instrution);
+        case 4:
+            //goto beq
+        case 5:
+            //goto bne
+        case 2:
+            //goto jump
         case 134217728: // 08000000 ->  000010
             //TODO go to J-type
+            break;
+        default:
+            cout<<"OPcode não valido"<<endl;
             break;
     }
 
@@ -129,8 +143,55 @@ void UnidadeControle::Rtype(int inst) {
             bd->setRegat(reg1, 3);
             bd->setRegat(reg2, 2);
             ula->setOP(reg1,reg2,dst,001);
+
+        default:
+            cout<<"Function nao valida"<<endl;
+            break;
     }
 
+
+}
+
+void UnidadeControle::ItypeLUI(int inst) {
+    Util *util = new Util();
+
+    int regrs = util->getRegRSTypeI(inst);
+
+    int constante = util->getConstTypeI(inst);
+    BancoReg* bd = BancoReg::getinstance();
+
+    bd->setRegat(regrs,constante);
+
+}
+
+void UnidadeControle::ItypeSW(int inst) {
+    Util *util = new Util();
+    RAM* ram = RAM::getInstance();
+    ULA* ula = ULA::getInstance();
+    BancoReg* bg  = BancoReg::getinstance();
+
+
+    int regrs = util->getRegRSTypeI(inst);
+    int regts = util->getRegRTTypeI(inst);
+    int constante = util->getConstTypeI(inst);
+    int offset = ula->offset(regts,constante);
+    bg->setRegat(regrs,ram->getdado(offset));
+
+
+}
+
+void UnidadeControle::ItypeLW(int inst) {
+    Util *util = new Util();
+    RAM* ram = RAM::getInstance();
+    ULA* ula = ULA::getInstance();
+    BancoReg* bg  = BancoReg::getinstance();
+
+
+    int regrs = util->getRegRSTypeI(inst);
+    int regts = util->getRegRTTypeI(inst);
+    int constante = util->getConstTypeI(inst);
+    int offset = ula->offset(regts,constante);
+    ram->setDadoAt(offset,bg->GetRegat(regrs));
 
 }
 

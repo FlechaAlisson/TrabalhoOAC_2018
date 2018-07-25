@@ -7,8 +7,9 @@
 
 
 class Somador {
-    int incrementa(int pc);
 
+public:
+    int incrementa(int pc);
 };
 
 

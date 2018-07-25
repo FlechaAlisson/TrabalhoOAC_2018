@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrabOAC">
-				<Option output="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/TrabOAC.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug"/>
+				<Option output="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/TrabOAC.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabOAC"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabOAC"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrabOAC/fast">
-				<Option output="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/TrabOAC.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug"/>
+				<Option output="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/TrabOAC.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,73 +53,73 @@
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabOAC/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabOAC/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/BancoReg.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/RAM.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/Somador.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/ULA.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Model/UnidadeControle.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Util/Util.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/Util/Util.h">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/main.cpp">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/main.cpp">
 			<Option target="TrabOAC"/>
 		</Unit>
-		<Unit filename="C:/Users/Alisson/CLionProjects/TrabOAC/TrabalhoOAC_2018/CMakeLists.txt">
+		<Unit filename="C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

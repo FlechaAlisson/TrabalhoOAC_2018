@@ -5,6 +5,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 #include "BancoReg.h"
 using namespace std;
 
@@ -14,6 +15,7 @@ BancoReg::BancoReg() {
     for (int i = 0; i <= 32; ++i) {
         this->reg[i] = 0;
     }
+    PC = 0;
 }
 
 int BancoReg::getPC() const {
@@ -21,7 +23,7 @@ int BancoReg::getPC() const {
 }
 
 void BancoReg::setPC(int PC) {
-    BancoReg::PC = PC;
+    this->PC = PC;
 }
 
 int BancoReg::GetRegat(int n)
@@ -31,10 +33,14 @@ int BancoReg::GetRegat(int n)
 
 void BancoReg::PrinRegs() {
 
-    for (int i = 0; i < 32; i++) {
-        std::cout << "[" << i+1 << "] | " << this->reg[i] << std::endl;
 
+    std::cout<<"--REG--"<<endl;
+    std::cout<<"REG|VAL"<<endl;
+    std::cout.fill('0');// formatação
+    for (int i = 0; i < 32; i++) {
+        std::cout  << setw(2) << i+1 << " | " << this->reg[i]<<" " << std::endl;
     }
+    std::cout<<"------"<<endl;
 }
 
 BancoReg *BancoReg::getinstance() {

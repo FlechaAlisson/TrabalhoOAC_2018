@@ -11,11 +11,15 @@ ULA* ULA::instance = nullptr;
 
 int ULA::soma() {
     BancoReg* bg  = BancoReg::getinstance();
-    bg->setRegat(dst,bg->GetRegat(op1) + bg->GetRegat(op2));
+    int result = bg->GetRegat(op1) + bg->GetRegat(op2);
+    bg->setRegat(dst,result);
+    return result;
 }
 int ULA::subtrai(){
     BancoReg* bg  = BancoReg::getinstance();
-    bg->setRegat(dst,bg->GetRegat(op1) - bg->GetRegat(op2));
+    int result = bg->GetRegat(op1) - bg->GetRegat(op2);
+    bg->setRegat(dst,result);
+    return result;
 }
 
 
@@ -68,4 +72,14 @@ void ULA::logicOr() {
     BancoReg* bg  = BancoReg::getinstance();
     bg->setRegat(dst,bg->GetRegat(op1) | bg->GetRegat(op2));
 
+}
+
+int ULA::offset(int a, int b) {
+    op1 = a;
+    op2 = b;
+    return this->somaofset();
+}
+
+int ULA::somaofset() {
+    return op1 + op2;
 }

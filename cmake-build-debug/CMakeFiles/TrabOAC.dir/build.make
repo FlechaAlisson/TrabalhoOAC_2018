@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.1.5\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018
+CMAKE_SOURCE_DIR = C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TrabOAC.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/TrabOAC.dir/flags.make
 
 CMakeFiles/TrabOAC.dir/main.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TrabOAC.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\main.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TrabOAC.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\main.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\main.cpp
 
 CMakeFiles/TrabOAC.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\main.cpp > CMakeFiles\TrabOAC.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\main.cpp > CMakeFiles\TrabOAC.dir\main.cpp.i
 
 CMakeFiles/TrabOAC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\main.cpp -o CMakeFiles\TrabOAC.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\main.cpp -o CMakeFiles\TrabOAC.dir\main.cpp.s
 
 CMakeFiles/TrabOAC.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/TrabOAC.dir/main.cpp.obj.provides.build: CMakeFiles/TrabOAC.dir/main.
 
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj: Model/BancoReg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp
 
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp > CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp > CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.i
 
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp -o CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\BancoReg.cpp -o CMakeFiles\TrabOAC.dir\Model\BancoReg.cpp.s
 
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj.provides.build: CMakeFiles/TrabOAC
 
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj: Model/RAM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\RAM.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\RAM.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp
 
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Model/RAM.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp > CMakeFiles\TrabOAC.dir\Model\RAM.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp > CMakeFiles\TrabOAC.dir\Model\RAM.cpp.i
 
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Model/RAM.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp -o CMakeFiles\TrabOAC.dir\Model\RAM.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\RAM.cpp -o CMakeFiles\TrabOAC.dir\Model\RAM.cpp.s
 
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj.requires:
 
@@ -130,16 +130,16 @@ CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj.provides.build: CMakeFiles/TrabOAC.dir/
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/UnidadeControle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp > CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp > CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.i
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp -o CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\UnidadeControle.cpp -o CMakeFiles\TrabOAC.dir\Model\UnidadeControle.cpp.s
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj.requires:
 
@@ -154,16 +154,16 @@ CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj.provides.build: CMakeFiles/
 
 CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj: Util/Util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Util\Util.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Util\Util.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp
 
 CMakeFiles/TrabOAC.dir/Util/Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Util/Util.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp > CMakeFiles\TrabOAC.dir\Util\Util.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp > CMakeFiles\TrabOAC.dir\Util\Util.cpp.i
 
 CMakeFiles/TrabOAC.dir/Util/Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Util/Util.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp -o CMakeFiles\TrabOAC.dir\Util\Util.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Util\Util.cpp -o CMakeFiles\TrabOAC.dir\Util\Util.cpp.s
 
 CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj.requires:
 
@@ -178,16 +178,16 @@ CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj.provides.build: CMakeFiles/TrabOAC.dir/
 
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: Model/ULA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\ULA.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\ULA.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp
 
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Model/ULA.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp > CMakeFiles\TrabOAC.dir\Model\ULA.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp > CMakeFiles\TrabOAC.dir\Model\ULA.cpp.i
 
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Model/ULA.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp -o CMakeFiles\TrabOAC.dir\Model\ULA.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\ULA.cpp -o CMakeFiles\TrabOAC.dir\Model\ULA.cpp.s
 
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj.requires:
 
@@ -202,16 +202,16 @@ CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj.provides.build: CMakeFiles/TrabOAC.dir/
 
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj: CMakeFiles/TrabOAC.dir/flags.make
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj: Model/Somador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\Somador.cpp.obj -c C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TrabOAC.dir\Model\Somador.cpp.obj -c C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp
 
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrabOAC.dir/Model/Somador.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp > CMakeFiles\TrabOAC.dir\Model\Somador.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp > CMakeFiles\TrabOAC.dir\Model\Somador.cpp.i
 
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrabOAC.dir/Model/Somador.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp -o CMakeFiles\TrabOAC.dir\Model\Somador.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\Model\Somador.cpp -o CMakeFiles\TrabOAC.dir\Model\Somador.cpp.s
 
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj.requires:
 
@@ -248,7 +248,7 @@ TrabOAC.exe: CMakeFiles/TrabOAC.dir/build.make
 TrabOAC.exe: CMakeFiles/TrabOAC.dir/linklibs.rsp
 TrabOAC.exe: CMakeFiles/TrabOAC.dir/objects1.rsp
 TrabOAC.exe: CMakeFiles/TrabOAC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TrabOAC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TrabOAC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TrabOAC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -271,6 +271,6 @@ CMakeFiles/TrabOAC.dir/clean:
 .PHONY : CMakeFiles/TrabOAC.dir/clean
 
 CMakeFiles/TrabOAC.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018 C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018 C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug C:\Users\Alisson\CLionProjects\TrabOAC\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles\TrabOAC.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018 C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018 C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug C:\Users\Alisspn\Desktop\traboac\TrabalhoOAC_2018\cmake-build-debug\CMakeFiles\TrabOAC.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TrabOAC.dir/depend
 

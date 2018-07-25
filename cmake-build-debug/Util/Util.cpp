@@ -8,14 +8,17 @@ using namespace std;
 #include "Util.h"
 
 int Util::getOPcode(int instrution) {
-    int mask  =  -67108864;// representa FC000000 ou seja os seis bits de mais alta ordem
-    return instrution & mask;
+
+    unsigned  int  a = (unsigned int)instrution >> 26;
+
+    return (int) a;
 }
 
 int Util::getFunc(int inst) {
     int mask = 63; // representa os bits 6 bits de mais baixa ondem
     return  inst & mask;
 }
+
 
 int Util::getReg1TypeR(int inst) {
     int mask = 0x1f00000;
@@ -45,6 +48,24 @@ int Util::getRegDSTTypeR(int inst) {
 
     return aux;
 
+}
+
+int Util::getRegRSTypeI(int inst) {
+    inst<<=6;
+    inst>>=27;
+    return inst;
+}
+
+int Util::getRegRTTypeI(int inst) {
+    inst<<=11;
+    inst>>=27;
+    return inst;
+}
+
+int Util::getConstTypeI(int inst) {
+    inst <<=26;
+    inst>>=26;
+    return inst;
 }
 
 

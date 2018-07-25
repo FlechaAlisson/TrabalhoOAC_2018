@@ -16,6 +16,7 @@ CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: Model/ULA.cpp
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: Model/ULA.h
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/BancoReg.h
+CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/RAM.h
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/ULA.h
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/UnidadeControle.cpp
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: Model/UnidadeControle.h
@@ -26,6 +27,7 @@ CMakeFiles/TrabOAC.dir/Util/Util.cpp.obj: Util/Util.h
 
 CMakeFiles/TrabOAC.dir/main.cpp.obj: Model/BancoReg.h
 CMakeFiles/TrabOAC.dir/main.cpp.obj: Model/RAM.h
+CMakeFiles/TrabOAC.dir/main.cpp.obj: Model/Somador.h
 CMakeFiles/TrabOAC.dir/main.cpp.obj: Model/ULA.h
 CMakeFiles/TrabOAC.dir/main.cpp.obj: Model/UnidadeControle.h
 CMakeFiles/TrabOAC.dir/main.cpp.obj: Util/Util.h

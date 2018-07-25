@@ -11,13 +11,21 @@ private:
     int codigo[100];
     int qtCodigo;
     int qtDados;
+     static RAM* instance;
 
 public:
 
+    static RAM* getInstance();
+    void setInstance(RAM* instance);
     int getcodigo(int n);
     RAM(char* nome);
     int getdado(int n);
     void printCodigo();
+    void setDadoAt(int n, int valor);
+
+    int getQtCodigo() const;
+
+    void setQtCodigo(int qtCodigo);
 };
 
 
