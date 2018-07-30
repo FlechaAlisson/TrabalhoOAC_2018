@@ -67,9 +67,14 @@ int Util::getConstTypeI(int inst) {
 }
 
 int Util::getConstTypeJ(int inst) {
-    unsigned  int  a = (unsigned int)inst << 6;
-    a>>= 6;
-    return (int) a;
+    if(inst < 0) {
+        unsigned int a = (unsigned int) inst << 6;
+        a >>= 6;
+        return (int) a;
+    }
+    inst <<= 6;
+    inst >>= 6;
+    return inst;
 }
 
 
