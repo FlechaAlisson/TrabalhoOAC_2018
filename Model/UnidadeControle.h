@@ -45,10 +45,13 @@ private:
     void ItypeSW(int instrution);
     void ItypeLW(int instrution);
     void JtypeJump(int instrution);
-    void ItypeLUI(int instrution);
+    void ItypeLI(int instrution);
     UnidadeControle();
     static UnidadeControle* instance;
 
+    void ItypeBNE(int instrution);
+
+    void ItypeBEQ(int instrution);
 };
 
 

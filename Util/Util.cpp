@@ -21,51 +21,49 @@ int Util::getFunc(int inst) {
 
 
 int Util::getReg1TypeR(int inst) {
-    int mask = 0x1f00000;
-    int aux = inst & mask;
-    if (!aux)
-        return 0; // se for 0, sai do loop retornando 0
-    aux >>= 21;
-    return aux;
+    unsigned int a = (unsigned int) inst << 6;
+    a>>=27;
+    return (int) a;
 }
 
 int Util::getReg2TypeR(int inst) {
-    int mask = 983040;
-    int aux = inst & mask;
-    if (!aux)
-        return 0;
-    aux>>=16;
-    return aux;
+    unsigned int a = (unsigned int) inst << 11;
+    a>>=27;
+    return (int) a;
 
 }
 
 int Util::getRegDSTTypeR(int inst) {
-    int mask = 31744;
-    int aux = inst & mask;
-    if (!aux)
-        return 0;
-    aux>>=11;
 
-    return aux;
+    unsigned int a = (unsigned int) inst << 16;
+    a>>=27;
+    return (int) a;
 
 }
 
 int Util::getRegRSTypeI(int inst) {
-    inst<<=6;
-    inst>>=27;
-    return inst;
+    unsigned  int  a = (unsigned int)inst<<6;
+    a>>=27;
+    return (int) a;
 }
 
 int Util::getRegRTTypeI(int inst) {
-    inst<<=11;
-    inst>>=27;
-    return inst;
+    unsigned  int  a = (unsigned int) inst<<11;
+    a>>=27;
+    return (int) a;
 }
 
 int Util::getConstTypeI(int inst) {
-    inst <<=26;
+    if (inst <0) {
+        unsigned int a = (unsigned int) inst << 26;
+        a >>= 26;
+        return (int) a;
+    }
+    inst<<= 26;
     inst>>=26;
-    return inst;
+    return  inst;
+
+
 }
 
 int Util::getConstTypeJ(int inst) {

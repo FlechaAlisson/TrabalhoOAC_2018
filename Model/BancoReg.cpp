@@ -30,6 +30,7 @@ void BancoReg::setPC(int PC) {
         this->PC = PC;
 }
 
+
 int BancoReg::GetRegat(int n)
 {
     return this->reg[n-1];
@@ -61,5 +62,10 @@ void BancoReg::setRegat(int n, int valor) {
     UnidadeControle* unidadeControle = UnidadeControle::getInstance();
     if (unidadeControle->getRegWrite() != 0)
         reg[n-1] = valor;
+}
+
+void BancoReg::incrementaPC(int PC) {
+    this->PC = PC;
+
 }
 

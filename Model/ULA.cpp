@@ -30,7 +30,7 @@ int ULA::subtrai(){
         unidadeControle->setZero(1);
     }
 
-    if(!unidadeControle->getMemtoReg())
+    if(!unidadeControle->getRegWrite())
     {
         bg->setRegat(dst,result);
     }
@@ -49,6 +49,12 @@ void ULA::setOP(int a, int b, int c, int aluop) {
     op1 = a;
     op2 = b;
     dst = c;
+    this->aluop = aluop;
+
+}
+void ULA::setOP(int a, int b, int aluop) {
+    op1 = a;
+    op2 = b;
     this->aluop = aluop;
 
 }
@@ -108,3 +114,6 @@ int ULA::offset(int a, int b) {
 int ULA::somaofset() {
     return op1 + op2;
 }
+
+
+

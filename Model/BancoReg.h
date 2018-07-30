@@ -18,6 +18,7 @@ public:
     void PrinRegs(int i);
     int getPC() const;
     void setPC(int PC);
+    void incrementaPC(int PC);
 };
 
 

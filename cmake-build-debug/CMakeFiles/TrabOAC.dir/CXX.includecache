@@ -25,6 +25,8 @@ iostream
 -
 fstream
 -
+iomanip
+-
 RAM.h
 C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/RAM.h
 UnidadeControle.h

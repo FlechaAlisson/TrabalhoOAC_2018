@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include "RAM.h"
 #include "UnidadeControle.h"
 
@@ -38,6 +39,10 @@ RAM::RAM(char* nome)
     for (int j = n; j < 100; ++j) {
         this->codigo[j]= 0;
     }
+
+    for (int j = 0; j < 100; ++j) {
+        this->dados[j] = 0;
+    }
 }
 
 int RAM::getQtCodigo() const {
@@ -61,7 +66,7 @@ int RAM::getcodigo(int n)  {
 
 int RAM::getdado(int n) {
     UnidadeControle* unidadeControle = UnidadeControle::getInstance();
-    if (unidadeControle->getMemRead())
+    if (unidadeControle->getMemtoReg())
         return dados[n-1];
 }
 
@@ -77,5 +82,17 @@ void RAM::setInstance(RAM *ins) {
 void RAM::setDadoAt(int n, int valor) {
     UnidadeControle* unidadeControle = UnidadeControle::getInstance();
     if (unidadeControle->getMemWrite() != 0)
-        dados[n] = valor;
+        dados[n-1] = valor;
+}
+
+void RAM::printDado() {
+    std::cout<<"--DADO--"<<endl;
+    std::cout<<"DAD0|VAL"<<endl;
+    std::cout<<"----+---"<<endl;
+    std::cout.fill('0');// formatação
+    for (int i = 0; i < 100; ++i) {
+        std::cout  << setw(3) << i+1 << " | " << this->dados[i]<<" " << std::endl;
+    }
+
+
 }

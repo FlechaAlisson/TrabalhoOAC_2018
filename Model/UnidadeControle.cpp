@@ -95,7 +95,6 @@ void UnidadeControle::DecodificaOP(int instrution) {
     switch (op)
     {
         case 0:
-            Rtype(instrution);
             RegDst = 1;
             AluSrc = 0;
             MemtoReg = 0;
@@ -105,9 +104,10 @@ void UnidadeControle::DecodificaOP(int instrution) {
             Branch = 0;
             Jump = 0;
             AluOp = 10;
+            Rtype(instrution);
+
             break;
         case 15: // 8C00000 -> 100011
-            ItypeLUI(instrution);
             RegDst = 0;
             AluSrc = 1;
             MemtoReg = 1;
@@ -116,21 +116,21 @@ void UnidadeControle::DecodificaOP(int instrution) {
             MemWrite = 0;
             Branch = 0;
             Jump = 0;
+            ItypeLI(instrution);
             break;
         case 43:
-            ItypeSW(instrution);
             RegDst = 0;
             AluSrc = 1;
-            MemtoReg = 0;
+            MemtoReg = 1;
             RegWrite = 0;
             MemRead = 0;
             MemWrite = 1;
             Branch = 0;
             Jump = 0;
             AluOp = 00;
+            ItypeSW(instrution);
             break;
         case 35:
-            ItypeLW(instrution);
             RegDst = 0;
             AluSrc = 1;
             MemtoReg = 1;
@@ -140,10 +140,11 @@ void UnidadeControle::DecodificaOP(int instrution) {
             Branch = 0;
             Jump = 0;
             AluOp = 00;
+            ItypeLW(instrution);
             break;
         case 4:
             //goto beq
-            /*
+
             RegDst = 0;
             AluSrc = 0;
             MemtoReg = 0;
@@ -153,11 +154,10 @@ void UnidadeControle::DecodificaOP(int instrution) {
             Branch = 1;
             Jump = 0;
             AluOp = 01;
-            */
+            ItypeBEQ(instrution);
             break;
         case 5:
             //goto bne
-            /*
             RegDst = 0;
             AluSrc = 0;
             MemtoReg = 0;
@@ -167,10 +167,10 @@ void UnidadeControle::DecodificaOP(int instrution) {
             Branch = 1;
             Jump = 0;
             AluOp = 01;
-            */
+            ItypeBNE(instrution);
+
             break;
         case 2:
-            JtypeJump(instrution);
             //todo arrumar essa bagaça pq tem que ir pro somador
             RegDst = 0;
             AluSrc = 0;
@@ -180,6 +180,7 @@ void UnidadeControle::DecodificaOP(int instrution) {
             MemWrite = 0;
             Branch = 0;
             Jump = 1;
+            JtypeJump(instrution);
             break;
         default:
             cout<<"ERRO: Opcode não valido"<<endl;
@@ -202,7 +203,6 @@ void UnidadeControle::Rtype(int inst) {
     int dst;
     if(getRegDst())
         dst = util->getRegDSTTypeR(inst);
-    else
 
     switch (func)
     {
@@ -225,39 +225,21 @@ void UnidadeControle::Rtype(int inst) {
         default:
             cout<<"ERRO: Function nao valida"<<endl;
             break;
-    }
 
+    }
+    ula->executa();
 
 }
 
-void UnidadeControle::ItypeLUI(int inst) {
+void UnidadeControle::ItypeLI(int inst) {
     Util *util = new Util();
 
-    int regrs = util->getRegRSTypeI(inst);
+    int regrt = util->getRegRTTypeI(inst);
 
     int constante = util->getConstTypeI(inst);
     BancoReg* bd = BancoReg::getinstance();
 
-    bd->setRegat(regrs,constante);
-
-}
-
-void UnidadeControle::ItypeSW(int inst) {
-    Util *util = new Util();
-    RAM* ram = RAM::getInstance();
-    ULA* ula = ULA::getInstance();
-    BancoReg* bg  = BancoReg::getinstance();
-
-
-    int regrs = util->getRegRSTypeI(inst);
-    int regts;
-    if(!getRegDst())
-        regts = util->getRegRTTypeI(inst);
-    int constante = util->getConstTypeI(inst);
-    int offset = ula->offset(regts,constante);
-    bg->setRegat(regrs,ram->getdado(offset));
-
-    delete(util);
+    bd->setRegat(regrt,constante);
 
 }
 
@@ -273,11 +255,32 @@ void UnidadeControle::ItypeLW(int inst) {
     if(!getRegDst())
         regts = util->getRegRTTypeI(inst);
     int constante = util->getConstTypeI(inst);
-    int address = ula->offset(regts,constante);
+    int address = ula->offset(bg->GetRegat(regrs),constante);
+    int value = ram->getdado(address);
+    bg->setRegat(regts,value);
+
+    delete(util);
+
+}
+
+void UnidadeControle::ItypeSW(int inst) {
+    Util *util = new Util();
+    RAM* ram = RAM::getInstance();
+    ULA* ula = ULA::getInstance();
+    BancoReg* bg  = BancoReg::getinstance();
+
+
+    int regrs = util->getRegRSTypeI(inst);
+    int regts;
+    if(!getRegDst())
+        regts = util->getRegRTTypeI(inst);
+    int constante = util->getConstTypeI(inst);
+    int address = ula->offset(bg->GetRegat(regrs),constante);
     UnidadeControle* unidadeControle = UnidadeControle::getInstance();
     if(unidadeControle->getMemtoReg())
     {
-        ram->setDadoAt(address,bg->GetRegat(regrs));
+        int value = bg->GetRegat(regts);
+        ram->setDadoAt(address,value);
     }
     delete(util);
 }
@@ -286,6 +289,7 @@ void UnidadeControle::JtypeJump(int instrution) {
     BancoReg* bg  = BancoReg::getinstance();
     Util *util = new Util();
     int address = util->getConstTypeJ(instrution);
+
 
     bg->setPC(address);
 }
@@ -306,5 +310,55 @@ int UnidadeControle::getZero() const {
 
 void UnidadeControle::setZero(int Zero) {
     UnidadeControle::Zero = Zero;
+}
+
+void UnidadeControle::ItypeBNE(int inst) {
+    Util *util = new Util();
+    RAM* ram = RAM::getInstance();
+    ULA* ula = ULA::getInstance();
+    BancoReg* bg  = BancoReg::getinstance();
+
+
+    int regrs = util->getRegRSTypeI(inst);
+    int regts;
+    if(!getRegDst())
+        regts = util->getRegRTTypeI(inst);
+    int constante = util->getConstTypeI(inst);
+
+    ula->setOP(regrs,regts,110);
+    ula->executa();
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+
+    int pc = bg->getPC();
+    if (!unidadeControle->getZero())
+        bg->setPC(pc+constante);
+
+    delete(util);
+
+}
+
+void UnidadeControle::ItypeBEQ(int inst) {
+    Util *util = new Util();
+    RAM* ram = RAM::getInstance();
+    ULA* ula = ULA::getInstance();
+    BancoReg* bg  = BancoReg::getinstance();
+
+
+    int regrs = util->getRegRSTypeI(inst);
+    int regts;
+    if(!getRegDst())
+        regts = util->getRegRTTypeI(inst);
+    int constante = util->getConstTypeI(inst);
+
+    ula->setOP(regrs,regts,110);
+    ula->executa();
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+
+    int pc = bg->getPC();
+    if (unidadeControle->getZero())
+        bg->setPC(pc+constante);
+
+    delete(util);
+
 }
 

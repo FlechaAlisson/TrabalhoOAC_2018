@@ -18,11 +18,12 @@ int main(){
 
         int pc = bd->getPC();
         int instrucao = ram->getcodigo(bd->getPC());
-        bd->setPC(somador->incrementa(bd->getPC()));
+        bd->incrementaPC(somador->incrementa(bd->getPC()));
         unidadeControle->DecodificaOP(instrucao);
-        ula->executa();
         cout << "Executando: "<<(void*) instrucao << endl;
         bd->PrinRegs(pc);
+//        ram->printDado();
+
     }
 
 

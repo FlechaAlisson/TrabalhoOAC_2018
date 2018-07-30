@@ -24,6 +24,8 @@ public:
     void setDadoAt(int n, int valor);
     int getQtCodigo() const;
     void setQtCodigo(int qtCodigo);
+
+    void printDado();
 };
 
 
