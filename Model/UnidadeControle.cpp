@@ -12,6 +12,8 @@
 
 using namespace std;
 
+UnidadeControle* UnidadeControle::instance = 0;
+
 int UnidadeControle::getRegDst() const {
     return RegDst;
 }
@@ -179,9 +181,6 @@ void UnidadeControle::DecodificaOP(int instrution) {
             Branch = 0;
             Jump = 1;
             break;
-        case 134217728: // 08000000 ->  000010
-            //TODO go to J-type
-            break;
         default:
             cout<<"ERRO: Opcode não valido"<<endl;
             break;
@@ -200,7 +199,11 @@ void UnidadeControle::Rtype(int inst) {
     BancoReg* bd = BancoReg::getinstance();
     int reg1 = util->getReg1TypeR(inst);
     int reg2 = util->getReg2TypeR(inst);
-    int dst = util->getRegDSTTypeR(inst);
+    int dst;
+    if(getRegDst())
+        dst = util->getRegDSTTypeR(inst);
+    else
+
     switch (func)
     {
         case 32:
@@ -247,7 +250,9 @@ void UnidadeControle::ItypeSW(int inst) {
 
 
     int regrs = util->getRegRSTypeI(inst);
-    int regts = util->getRegRTTypeI(inst);
+    int regts;
+    if(!getRegDst())
+        regts = util->getRegRTTypeI(inst);
     int constante = util->getConstTypeI(inst);
     int offset = ula->offset(regts,constante);
     bg->setRegat(regrs,ram->getdado(offset));
@@ -264,10 +269,16 @@ void UnidadeControle::ItypeLW(int inst) {
 
 
     int regrs = util->getRegRSTypeI(inst);
-    int regts = util->getRegRTTypeI(inst);
+    int regts;
+    if(!getRegDst())
+        regts = util->getRegRTTypeI(inst);
     int constante = util->getConstTypeI(inst);
     int address = ula->offset(regts,constante);
-    ram->setDadoAt(address,bg->GetRegat(regrs));
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if(unidadeControle->getMemtoReg())
+    {
+        ram->setDadoAt(address,bg->GetRegat(regrs));
+    }
     delete(util);
 }
 
@@ -277,5 +288,23 @@ void UnidadeControle::JtypeJump(int instrution) {
     int address = util->getConstTypeJ(instrution);
 
     bg->setPC(address);
+}
+
+UnidadeControle *UnidadeControle::getInstance() {
+    if(instance == nullptr)
+        instance =  new UnidadeControle();
+    return instance;
+}
+
+UnidadeControle::UnidadeControle() {
+
+}
+
+int UnidadeControle::getZero() const {
+    return Zero;
+}
+
+void UnidadeControle::setZero(int Zero) {
+    UnidadeControle::Zero = Zero;
 }
 

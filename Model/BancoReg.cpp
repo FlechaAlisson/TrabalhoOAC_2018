@@ -7,6 +7,8 @@
 #include <iostream>
 #include <iomanip>
 #include "BancoReg.h"
+#include "UnidadeControle.h"
+
 using namespace std;
 
 BancoReg* BancoReg::instace = 0;
@@ -23,7 +25,9 @@ int BancoReg::getPC() const {
 }
 
 void BancoReg::setPC(int PC) {
-    this->PC = PC;
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if ( (unidadeControle->getBranch() && unidadeControle->getZero()) || unidadeControle->getJump() )
+        this->PC = PC;
 }
 
 int BancoReg::GetRegat(int n)
@@ -54,7 +58,8 @@ BancoReg *BancoReg::getinstance() {
 }
 
 void BancoReg::setRegat(int n, int valor) {
-    reg[n-1] = valor;
-
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if (unidadeControle->getRegWrite() != 0)
+        reg[n-1] = valor;
 }
 

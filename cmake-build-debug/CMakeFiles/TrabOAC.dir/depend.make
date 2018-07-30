@@ -3,9 +3,11 @@
 
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj: ../Model/BancoReg.cpp
 CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj: ../Model/BancoReg.h
+CMakeFiles/TrabOAC.dir/Model/BancoReg.cpp.obj: ../Model/UnidadeControle.h
 
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj: ../Model/RAM.cpp
 CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj: ../Model/RAM.h
+CMakeFiles/TrabOAC.dir/Model/RAM.cpp.obj: ../Model/UnidadeControle.h
 
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj: ../Model/Somador.cpp
 CMakeFiles/TrabOAC.dir/Model/Somador.cpp.obj: ../Model/Somador.h
@@ -14,6 +16,7 @@ CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: ../Model/BancoReg.h
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: ../Model/RAM.h
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: ../Model/ULA.cpp
 CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: ../Model/ULA.h
+CMakeFiles/TrabOAC.dir/Model/ULA.cpp.obj: ../Model/UnidadeControle.h
 
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: ../Model/BancoReg.h
 CMakeFiles/TrabOAC.dir/Model/UnidadeControle.cpp.obj: ../Model/RAM.h

@@ -14,7 +14,6 @@ private:
     int op2;
     int dst;
     int aluop;
-    int alucontrol;
 public:
     static ULA* getInstance();
     void setOP(int a , int b, int c, int aluop);

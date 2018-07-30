@@ -22,9 +22,7 @@ public:
     int getdado(int n);
     void printCodigo();
     void setDadoAt(int n, int valor);
-
     int getQtCodigo() const;
-
     void setQtCodigo(int qtCodigo);
 };
 

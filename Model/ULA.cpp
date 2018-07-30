@@ -5,6 +5,7 @@
 #include "ULA.h"
 #include "RAM.h"
 #include "BancoReg.h"
+#include "UnidadeControle.h"
 
 ULA* ULA::instance = nullptr;
 
@@ -12,13 +13,27 @@ ULA* ULA::instance = nullptr;
 int ULA::soma() {
     BancoReg* bg  = BancoReg::getinstance();
     int result = bg->GetRegat(op1) + bg->GetRegat(op2);
-    bg->setRegat(dst,result);
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if(!unidadeControle->getMemtoReg())
+    {
+        bg->setRegat(dst,result);
+    }
     return result;
 }
 int ULA::subtrai(){
     BancoReg* bg  = BancoReg::getinstance();
     int result = bg->GetRegat(op1) - bg->GetRegat(op2);
-    bg->setRegat(dst,result);
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+
+    if(!result) // se o resultado for zero, seta true
+    {
+        unidadeControle->setZero(1);
+    }
+
+    if(!unidadeControle->getMemtoReg())
+    {
+        bg->setRegat(dst,result);
+    }
     return result;
 }
 
@@ -65,12 +80,22 @@ void ULA::executa() {
 
 void ULA::logicAnd() {
     BancoReg* bg  = BancoReg::getinstance();
-    bg->setRegat(dst,bg->GetRegat(op1) & bg->GetRegat(op2));
+    int result = bg->GetRegat(op1) & bg->GetRegat(op2);
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if(!unidadeControle->getMemtoReg())
+    {
+        bg->setRegat(dst,result);
+    }
 }
 
 void ULA::logicOr() {
     BancoReg* bg  = BancoReg::getinstance();
-    bg->setRegat(dst,bg->GetRegat(op1) | bg->GetRegat(op2));
+    int result = bg->GetRegat(op1) | bg->GetRegat(op2);
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if(!unidadeControle->getMemtoReg())
+    {
+        bg->setRegat(dst,result);
+    }
 
 }
 

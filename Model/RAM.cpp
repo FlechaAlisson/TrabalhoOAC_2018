@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include "RAM.h"
+#include "UnidadeControle.h"
 
 using namespace std;
 RAM* RAM::instance = 0;
@@ -55,11 +56,13 @@ void RAM::printCodigo() {
 }
 
 int RAM::getcodigo(int n)  {
-    return codigo[n];
+        return codigo[n];
 }
 
 int RAM::getdado(int n) {
-    return dados[n-1];
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if (unidadeControle->getMemRead())
+        return dados[n-1];
 }
 
 RAM *RAM::getInstance() {
@@ -72,5 +75,7 @@ void RAM::setInstance(RAM *ins) {
 }
 
 void RAM::setDadoAt(int n, int valor) {
-    dados[n] = valor;
+    UnidadeControle* unidadeControle = UnidadeControle::getInstance();
+    if (unidadeControle->getMemWrite() != 0)
+        dados[n] = valor;
 }
