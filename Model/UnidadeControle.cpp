@@ -77,32 +77,107 @@ void UnidadeControle::setRegWrite(int RegWrite) {
     UnidadeControle::RegWrite = RegWrite;
 }
 
-void UnidadeControle::DecodificaOP(int instrution) {
-  Util *util = new Util();
-  int op = util->getOPcode(instrution);
+int UnidadeControle::getJump() const {
+    return Jump;
+}
 
-  switch (op)
+void UnidadeControle::setJump(int Jump) {
+    UnidadeControle::Jump = Jump;
+}
+
+
+void UnidadeControle::DecodificaOP(int instrution) {
+    Util *util = new Util();
+    int op = util->getOPcode(instrution);
+
+    switch (op)
     {
         case 0:
             Rtype(instrution);
+            RegDst = 1;
+            AluSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            Jump = 0;
+            AluOp = 10;
             break;
         case 15: // 8C00000 -> 100011
             ItypeLUI(instrution);
+            RegDst = 0;
+            AluSrc = 1;
+            MemtoReg = 1;
+            RegWrite = 1;
+            MemRead = 1;
+            MemWrite = 0;
+            Branch = 0;
+            Jump = 0;
             break;
         case 43:
             ItypeSW(instrution);
+            RegDst = 0;
+            AluSrc = 1;
+            MemtoReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 1;
+            Branch = 0;
+            Jump = 0;
+            AluOp = 00;
             break;
         case 35:
             ItypeLW(instrution);
+            RegDst = 0;
+            AluSrc = 1;
+            MemtoReg = 1;
+            RegWrite = 1;
+            MemRead = 1;
+            MemWrite = 0;
+            Branch = 0;
+            Jump = 0;
+            AluOp = 00;
             break;
         case 4:
             //goto beq
+            /*
+            RegDst = 0;
+            AluSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            Jump = 0;
+            AluOp = 01;
+            */
             break;
         case 5:
             //goto bne
+            /*
+            RegDst = 0;
+            AluSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            Jump = 0;
+            AluOp = 01;
+            */
             break;
         case 2:
             JtypeJump(instrution);
+            //todo arrumar essa bagaça pq tem que ir pro somador
+            RegDst = 0;
+            AluSrc = 0;
+            MemtoReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            Jump = 1;
             break;
         case 134217728: // 08000000 ->  000010
             //TODO go to J-type

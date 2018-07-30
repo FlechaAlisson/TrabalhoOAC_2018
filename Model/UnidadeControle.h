@@ -43,6 +43,10 @@ public:
     void DecodificaOP(int inst);
     void Rtype(int inst);
 
+    int getJump() const;
+
+    void setJump(int Jump);
+
 private:
     int RegDst = 0;
     int Branch = 0;
@@ -52,6 +56,7 @@ private:
     int MemWrite = 0;
     int AluSrc = 0;
     int RegWrite = 0;
+    int Jump = 0;
 
 
     void ItypeLUI(int instrution);
