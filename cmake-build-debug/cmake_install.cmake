@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "../TrabalhoOAC_2018/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
