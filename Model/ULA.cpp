@@ -30,7 +30,7 @@ int ULA::subtrai(){
         unidadeControle->setZero(1);
     }
 
-    if(!unidadeControle->getRegWrite())
+    if(unidadeControle->getRegWrite())
     {
         bg->setRegat(dst,result);
     }
