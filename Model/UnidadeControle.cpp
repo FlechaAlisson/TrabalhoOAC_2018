@@ -240,6 +240,7 @@ void UnidadeControle::ItypeLI(int inst) {
     BancoReg* bd = BancoReg::getinstance();
 
     bd->setRegat(regrt,constante);
+    delete(util);
 
 }
 

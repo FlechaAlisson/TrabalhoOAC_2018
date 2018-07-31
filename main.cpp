@@ -22,7 +22,7 @@ int main(){
         unidadeControle->DecodificaOP(instrucao);
         cout << "Executando: "<<(void*) instrucao << endl;
         bd->PrinRegs(pc);
-//        ram->printDado();
+        ram->printDado();
 
     }
 

@@ -54,27 +54,18 @@ int Util::getRegRTTypeI(int inst) {
 }
 
 int Util::getConstTypeI(int inst) {
-    if (inst <0) {
-        unsigned int a = (unsigned int) inst << 26;
-        a >>= 26;
-        return (int) a;
-    }
-    inst<<= 26;
-    inst>>=26;
-    return  inst;
+
+
+    inst <<= 16;
+    return inst >> 16;
 
 
 }
 
 int Util::getConstTypeJ(int inst) {
-    if(inst < 0) {
-        unsigned int a = (unsigned int) inst << 6;
-        a >>= 6;
-        return (int) a;
-    }
+
     inst <<= 6;
-    inst >>= 6;
-    return inst;
+    return inst >> 6;
 }
 
 
