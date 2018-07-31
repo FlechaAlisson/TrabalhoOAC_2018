@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
     BancoReg* bd = BancoReg::getinstance();
-    char string[85] = "C:/Users/Alisspn/Desktop/traboac/TrabalhoOAC_2018/Model/dados.txt";
+    char string[85] = "../Model/dados.txt";
     RAM *ram = new RAM(string);
     ram->setInstance(ram);
     ULA *ula = ULA::getInstance();
