@@ -142,6 +142,9 @@ void UnidadeControle::DecodificaOP(int instrution) {
             AluOp = 00;
             ItypeLW(instrution);
             break;
+        case 8:
+
+            break;
         case 4:
             //goto beq
 
@@ -171,7 +174,6 @@ void UnidadeControle::DecodificaOP(int instrution) {
 
             break;
         case 2:
-            //todo arrumar essa bagaça pq tem que ir pro somador
             RegDst = 0;
             AluSrc = 0;
             MemtoReg = 0;
@@ -219,6 +221,7 @@ void UnidadeControle::Rtype(int inst) {
             ula->setOP(reg1,reg2,dst,001);
             break;
         case 8:
+            this->Jump = 1;
             bd->setPC(reg1);
             break;
 
